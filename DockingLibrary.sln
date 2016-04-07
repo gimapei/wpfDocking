@@ -1,11 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Blend for Visual Studio 14
+# Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockingLibrary", "DockingLibrary\DockingLibrary.csproj", "{FA274CD2-57BB-4EB0-B101-A562ADB1685E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockingLibraryDemo", "DockingLibraryDemo\DockingLibraryDemo.csproj", "{96DA42DB-DEB6-41FA-AD38-9F9FB446CFE5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FA274CD2-57BB-4EB0-B101-A562ADB1685E} = {FA274CD2-57BB-4EB0-B101-A562ADB1685E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
