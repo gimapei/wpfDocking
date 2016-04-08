@@ -5,6 +5,8 @@
 	Title="Property Window" Height="300" Width="300" Icon="\Icons\props.ico"
     >
 	<Grid>
+        <custom:DockManager HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+        <custom:DockingButton x:Name="dockingButton" Content="DockingButton" HorizontalAlignment="Left" VerticalAlignment="Top" Height="91" Width="100"/>
 
-	</Grid>
+    </Grid>
 </custom:DockableContent>

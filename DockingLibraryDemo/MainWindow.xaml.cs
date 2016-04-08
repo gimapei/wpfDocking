@@ -37,7 +37,6 @@ namespace DockingLibraryDemo
 
         private void OnLoaded(object sender, EventArgs e)
         {
-            dockManager.ParentWindow = this;
             dockManager2.ParentWindow = this;
 
             //if (!string.IsNullOrEmpty(Properties.Settings.Default.DockingLayoutState))
@@ -61,7 +60,7 @@ namespace DockingLibraryDemo
 
         private void OnClosing(object sender, EventArgs e)
         {
-            Properties.Settings.Default.DockingLayoutState = dockManager.GetLayoutAsXml();
+            Properties.Settings.Default.DockingLayoutState = dockManager2.GetLayoutAsXml();
             Properties.Settings.Default.Save();
         }
 
@@ -91,7 +90,7 @@ namespace DockingLibraryDemo
 
         bool ContainsDocument(string title)
         {
-            foreach (DockingLibrary.DocumentContent doc in dockManager.Documents)
+            foreach (DockingLibrary.DocumentContent doc in dockManager2.Documents)
                 if (string.Compare(doc.Title, title, true) == 0)
                     return true;
             return false;
@@ -104,17 +103,12 @@ namespace DockingLibraryDemo
             while (ContainsDocument(title + i.ToString()))
                 i++;
 
-            DocWindow doc = new DocWindow();
-            doc.DockManager = dockManager;
-            doc.Title = title + i.ToString();
-            doc.Show();
-
             DocWindow doc2 = new DocWindow();
             doc2.DockManager = dockManager2;
             doc2.Title = title + i.ToString();
             doc2.Show();
 
-            files.Add(new RecentFile(doc.Title, "PATH" + doc.Title, doc.Title.Length*i));
+            files.Add(new RecentFile(doc2.Title, "PATH" + doc2.Title, doc2.Title.Length*i));
         }
 
         private void ExitApplication(object sender, EventArgs e)

@@ -5,6 +5,6 @@
     Title="Doc" Height="300" Width="300"
     >
 	<Grid>
-		<TextBox></TextBox>
+		<TextBox>이건 테스트입니다.</TextBox>
 	</Grid>
 </custom:DocumentContent>

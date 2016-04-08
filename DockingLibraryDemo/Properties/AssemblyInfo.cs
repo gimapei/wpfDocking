@@ -12,12 +12,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DockingLibraryDemo")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("WPF Docking Demo")]
+[assembly: AssemblyDescription("Romance Docking")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DockingLibraryDemo")]
-[assembly: AssemblyCopyright("Copyright @  2007")]
+[assembly: AssemblyCompany("Romance Corp")]
+[assembly: AssemblyProduct("WPF Docking Demo")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
